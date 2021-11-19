@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <title>Home</title>
+</head>
+<style>
+     p {
+        font-size: 22px;
+    }
+
+    body {
+        background-color: black;
+        color: white;
+    }
+    .Dark-Mode {
+        background-color:  white;
+        color: black;
+        
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: red;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 34px;
+    }
+
+    #myBtn:hover {
+        background-color: #555;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    footer {
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #111;
+        height: auto;
+        font-family: "Open Sans";
+        padding-top: 40px;
+        color: #fff;
+    }
+
+    .footer-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .socials {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 3rem 3rem 0;
+    }
+
+    .socials li {
+        margin: 0 15px;
+    }
+
+    .socials a {
+        text-decoration: none;
+    }
+
+    .socials a i {
+        font-size: 3rem;
+        transition: color .4s ease;
+
+    }
+
+    .socials a:hover i {
+        color: aqua;
+    }
+
+    .footer-bottom {
+        padding: 5px 0;
+        text-align: center;
+    }
+
+    .footer-bottom p {
+        font-size: 20px;
+        word-spacing: 2px;
+        text-transform: capitalize;
+    }
+
+    .footer-bottom span {
+        text-transform: uppercase;
+        opacity: .4;
+        font-weight: 200;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark   ">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand ">Peaky Blinders</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapsiblenavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="collapsiblenavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a href="home.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Overview
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="season 1.html">Season 1</a></li>
+                          <li><a class="dropdown-item" href="season 2.html">Season 2</a></li>
+                          <li><a class="dropdown-item" href="season 3.html">Season 3</a></li>
+                          <li><a class="dropdown-item" href="season 4.html">Season 4</a></li>
+                          <li><a class="dropdown-item" href="season 5.html">Season 5</a></li>
+                        </ul>
+                      </li>
+                    <li class="nav-item">
+                        <a href="history.html" class="nav-link">History</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="about us.html" class="nav-link ">About Us</a>
+                    </li> 
+                    <li class="nav-item">
+                        <button class="btn btn-success" onclick="myFunction()">Dark Mode</button>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://wallpapercave.com/wp/wp2398385.jpg"  class="img-fluid"
+                    alt="...">
+            </div>
+            <div class="carousel-item  ">
+                <img src="https://www.gentlemansgazette.com/wp-content/uploads/2017/10/Thomas-Shelby-wearing-a-grey-Donegal-Tweed-8-panel-flat-cap-Peaky-Blinders.jpg"  class="img-fluid" 
+                    alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://presspack.rte.ie/wp-content/blogs.dir/2/files/2019/04/Peaky-Blinders-Season-4_High-Res_EP404_IMG01.jpg"
+                 class="img-fluid" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container mt-5 p-4 bg">
+        <div class="jumbotron">
+            <div class="text-center">
+                <h1 class="fw-bold">PEAKY BLINDERS</h1>
+                <h5>Peaky Blinders is a British period crime drama television series created by Steven Knight. Set in
+                    Birmingham, England, the series follows the exploits of the Shelby crime family in the direct
+                    aftermath of the First World War. The fictional family is loosely based on a real urban youth gang
+                    of the same name, who were active in the city from the 1890s to the early 20th century</h5>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="text-center text-danger">
+        <h1>Family Members:</h1>
+    </div>
+    <div class="container-fluid mt-5 ">
+        <div class="container ">
+            <div class="row">
+                <div class="col-sm-4 col-md-6">
+                    <a href="https://en.wikipedia.org/wiki/Cillian_Murphy" target="_blank"> 
+                    <div class="card" style="border: #111;">
+                        <img src="https://i.pinimg.com/originals/c3/53/07/c353075d42845921a224a85a31ad5e92.jpg"
+                            class="img-fluid" alt="">
+                        <div class="card-body text-center bg-danger">
+                             <h5 class="card-text fw-bold text-light">Thomas Shelbey</h5>  
+                        </div>
+                    </div>
+                </a>
+                </div>
+                <div class="col-sm-4 col-md-6">
+                    <a href="https://en.wikipedia.org/wiki/Helen_McCrory" target="_blank"> 
+                    <div class="card" style="border: #111;">
+                        <img src="https://www.somagnews.com/wp-content/uploads/2021/01/x1-1-e1610396436863.jpg"
+                            class="img-fluid" alt="">
+                        <div class="card-body text-center bg-danger">
+                            <h5 class="card-text fw-bold text-light">Aunt Polly</h5>
+                        </div>
+                    </div>
+                </a>
+                </div>
+                <div class="col-sm-4 col-md-6">
+                    <a href="https://en.wikipedia.org/wiki/Sophie_Rundle" target="_blank"> 
+                    <div class="card " style="border: #111;">
+                        <img src="http://127.0.0.1:5500/ada2.jpg" class="img-fluid" alt="">
+                        <div class="card-body text-center bg-danger">
+                            <h5 class="card-text fw-bold text-light">Ada Shelbey</h5>
+                        </div>
+                    </div>
+                </a>
+                </div>
+                <div class="col-sm-4 col-md-6">
+                    <a href="https://en.wikipedia.org/wiki/Annabelle_Wallis" target="_blank"> 
+                    <div class="card" style="border: #111;">
+                        <img src="http://insidemediatrack.com/wp-content/uploads/2013/09/4119904-high-peaky-blinders2.jpg"
+                            class="img-fluid" alt="">
+                        <div class="card-body text-center bg-danger">
+                            <h5 class="card-text fw-bold text-light">Grace Shelbey</h5>
+                        </div>
+                    </div>
+                </a>
+                </div>
+                <div class="col-sm-4 col-md-6">
+                    <a href="https://en.wikipedia.org/wiki/Ned_Dennehy" target="_blank"> 
+                    <div class="card" style="border: #111;">
+                        <img src="https://vignette.wikia.nocookie.net/peaky-blinders/images/f/fd/Charlie2.jpg/revision/latest?cb=20171105001932"
+                            class="img-fluid" alt="">
+                        <div class="card-body text-center bg-danger">
+                            <h5 class="card-text fw-bold text-light">Charlie Strong</h5>
+                        </div>
+                    </div>
+                </a>
+                </div>
+                <div class="col-sm-4 col-md-6">
+                    <a href="https://en.wikipedia.org/wiki/Natasha_O'Keeffe" target="_blank"> 
+                    <div class="card" style="border: #111;">
+                        <img src="https://images.immediate.co.uk/production/volatile/sites/3/2017/11/peaky-lizzie-b6cd8a4.jpg?quality=90&lb=620,413&background=white"
+                            class="img-fluid" alt="">
+                        <div class="card-body text-center bg-danger">
+                            <h5 class="card-text fw-bold text-light">Lizzie Shelbey</h5>
+                        </div>
+                    </div>
+                </a>
+                </div>
+                <div class="col-sm-4 col-md-6">
+                    <a href="https://peaky-blinders.fandom.com/wiki/Finn_Shelby" target="_blank"> 
+                    <div class="card" style="border: #111;">
+                        <img src="https://wallpapercave.com/wp/wp4869154.jpg" class="img-fluid" alt="">
+                        <div class="card-body text-center bg-danger">
+                            <h5 class="card-text fw-bold text-light">Finn Shelbey</h5>
+                        </div>
+                    </div>
+                </a>
+                </div>
+                <div class="col-sm-4 col-md-6">
+                    <a href="https://en.wikipedia.org/wiki/Joe_Cole_(actor)" target="_blank"> 
+                    <div class="card" style="border: #111;">
+                        <img src="https://wallpapercave.com/wp/wp2398471.jpg"
+                            class="img-fluid" alt="">
+                        <div class="card-body text-center bg-danger">
+                            <h5 class="card-text fw-bold text-light">John Shelbey</h5>
+                        </div>
+                    </div>
+                </a>
+                </div>
+                <div class="col-sm-4 col-md-6">
+                    <a href="https://en.wikipedia.org/wiki/Paul_Anderson_(actor)" target="_blank"> 
+                    <div class="card" style="border: #111;">
+                        <img src="https://i.pinimg.com/originals/05/ad/06/05ad065e548d89f03c8ddbf3d58b4c06.jpg" class="img-fluid" alt="">
+                        <div class="card-body text-center bg-danger">
+                            <h5 class="card-text fw-bold text-light">Arthur Shelbey</h5>
+                        </div>
+                    </div>
+                </a>
+                </div>
+                <div class="col-sm-4 col-md-6">
+                    <a href="https://en.wikipedia.org/wiki/Kate_Phillips_(British_actress)" target="_blank"> 
+                    <div class="card" style="border: #111;">
+                        <img src="https://images.immediate.co.uk/production/volatile/sites/3/2017/11/peaky-linda-e006504.jpg?quality=90&lb=620,413&background=white"
+                            class="img-fluid" alt="">
+                        <div class="card-body text-center bg-danger">
+                            <h5 class="card-text fw-bold text-light">Linda Shelbey</h5>
+                        </div>
+                    </div>
+                </a>
+                </div>
+                <div class="col-sm-4 col-md-6">
+                    <a href="https://en.wikipedia.org/wiki/Aimee-Ffion_Edwards" target="_blank"> 
+                    <div class="card" style="border: #111;">
+                        <img src="http://127.0.0.1:5500/esmey.webp"
+                            class="img-fluid" alt="">
+                        <div class="card-body text-center bg-danger">
+                            <h5 class="card-text fw-bold text-light">Esmey Shelbey</h5>
+                        </div>
+                    </div>
+                </a>
+                </div>
+                <div class="col-sm-4 col-md-6">
+                    <a href="https://en.wikipedia.org/wiki/Finn_Cole" target="_blank"> 
+                    <div class="card" style="border: #111;">
+                        <img src="https://images.immediate.co.uk/production/volatile/sites/3/2017/11/michael-peaky-b240ca6.jpg?background=white&lb=620,413&quality=90"
+                            class="img-fluid" alt="">
+                        <div class="card-body text-center bg-danger">
+                            <h5 class="card-text fw-bold text-light">Michael Shelbey</h5>
+                        </div>
+                    </div>
+                </a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-bottom">
+                    <p>copyright &copy;2021 Software Chaser. designed by <span>Milan Rajani</span></p>
+                </div>
+                <ul class="socials">
+                    <li><a href=" https://www.instagram.com/invites/contact/?i=1nghlnonhoudj&utm_content=3ff9jpr" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/milan.rajani.509" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://github.com/milanrajani" target="_blank"><i class="fa fa-github"></i></a></li>
+                </ul>
+            </div>
+    
+        </footer>
+  
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    
+        <script>
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+        
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () { scrollFunction() };
+        
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+        
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+    
+
+
+
+
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+            crossorigin="anonymous"></script>
+  
+
+
+
+
+
+            <script>
+                function myFunction() {
+                    var element = document.body;
+                    element.classList.toggle("Dark-Mode");
+                }
+            </script>
+
+
+</body>
+
+</html>
